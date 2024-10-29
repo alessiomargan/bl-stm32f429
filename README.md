@@ -1,1 +1,3 @@
-# bl-stm32f4xx
+# SOES test
+
+virtaul folder *soes* single files linked to ${GIT_SOES}
