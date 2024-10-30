@@ -1,5 +1,6 @@
 #include "globals.h"
 #include "flash_utils.h"
+#include <stdio.h>
 
 /************************************************************************************
  * Ethercat PDOs SDOs

@@ -38,47 +38,47 @@
 		<link>
 			<name>soes/ecat_slv.c</name>
 			<type>1</type>
-			<locationURI>PARENT-5-GIT_SOES/alessio/work/code/firmware/SOES/soes/ecat_slv.c</locationURI>
+			<locationURI>GIT_SOES/soes/ecat_slv.c</locationURI>
 		</link>
 		<link>
 			<name>soes/esc.c</name>
 			<type>1</type>
-			<locationURI>PARENT-5-GIT_SOES/alessio/work/code/firmware/SOES/soes/esc.c</locationURI>
+			<locationURI>GIT_SOES/soes/esc.c</locationURI>
 		</link>
 		<link>
 			<name>soes/esc_coe.c</name>
 			<type>1</type>
-			<locationURI>PARENT-5-GIT_SOES/alessio/work/code/firmware/SOES/soes/esc_coe.c</locationURI>
+			<locationURI>GIT_SOES/soes/esc_coe.c</locationURI>
 		</link>
 		<link>
 			<name>soes/esc_eep.c</name>
 			<type>1</type>
-			<locationURI>PARENT-5-GIT_SOES/alessio/work/code/firmware/SOES/soes/esc_eep.c</locationURI>
+			<locationURI>GIT_SOES/soes/esc_eep.c</locationURI>
 		</link>
 		<link>
 			<name>soes/esc_eoe.c</name>
 			<type>1</type>
-			<locationURI>PARENT-5-GIT_SOES/alessio/work/code/firmware/SOES/soes/esc_eoe.c</locationURI>
+			<locationURI>GIT_SOES/soes/esc_eoe.c</locationURI>
 		</link>
 		<link>
 			<name>soes/esc_foe.c</name>
 			<type>1</type>
-			<locationURI>PARENT-5-GIT_SOES/alessio/work/code/firmware/SOES/soes/esc_foe.c</locationURI>
+			<locationURI>GIT_SOES/soes/esc_foe.c</locationURI>
 		</link>
 		<link>
 			<name>soes/esc_hw_et1100.c</name>
 			<type>1</type>
-			<locationURI>PARENT-5-GIT_SOES/alessio/work/code/firmware/SOES/soes/hal/advr_esc/esc_hw_et1100.c</locationURI>
+			<locationURI>GIT_SOES/soes/hal/advr_esc/esc_hw_et1100.c</locationURI>
 		</link>
 		<link>
 			<name>soes/hal_ec_STM32F4xx.c</name>
 			<type>1</type>
-			<locationURI>PARENT-5-GIT_SOES/alessio/work/code/firmware/SOES/soes/hal/advr_esc/hal_ec_STM32F4xx.c</locationURI>
+			<locationURI>GIT_SOES/soes/hal/advr_esc/hal_ec_STM32F4xx.c</locationURI>
 		</link>
 		<link>
 			<name>soes/soes.c</name>
 			<type>1</type>
-			<locationURI>PARENT-5-GIT_SOES/alessio/work/code/firmware/SOES/soes/hal/advr_esc/soes.c</locationURI>
+			<locationURI>GIT_SOES/soes/hal/advr_esc/soes.c</locationURI>
 		</link>
 	</linkedResources>
 	<variableList>
