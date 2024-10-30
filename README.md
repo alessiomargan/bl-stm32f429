@@ -1,3 +1,3 @@
-# SOES test
+# Ethercat bootloader using SOES
 
-virtaul folder *soes* single files linked to ${GIT_SOES}
+virtual folder *soes* single files linked to env variable ${GIT_SOES}
