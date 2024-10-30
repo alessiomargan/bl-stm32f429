@@ -112,7 +112,7 @@ static inline uint8_t test_jump2app(void) {
 	uint8_t sw1 = 0;
 	uint8_t ecat_boot = 0;
 	uint8_t user_ram = 0;
-
+	uint8_t crc_ok = sdo.ram.crc_cal == sdo.ram.crc_app;
 	// poll button ... 0 pressed
 	// sw1 == 1 ==> pressed
 	//sw1 = (~MAP_GPIO_getInputPinValue(PORT_SWITCH, SW1_PIN)) & 0x1;
@@ -128,8 +128,18 @@ static inline uint8_t test_jump2app(void) {
 	return ret;
 }
 
-static inline void try_boot(void)
-{
+static inline void jump2app(void) {
+
+	/* Set system control register SCR->VTOR  */
+	SCB->VTOR = FLASH_APP_ADDR;
+	//__disable_irq();
+	uint32_t JumpAddress = *(__IO uint32_t*) (FLASH_APP_ADDR + 4);
+	__set_MSP(*(__IO uint32_t*) FLASH_APP_ADDR);
+	((void (*)()) JumpAddress)();
+}
+
+static inline void try_boot(void) {
+
     if ( test_jump2app() ) {
         jump2app();
     }
@@ -172,8 +182,8 @@ int main(void)
   MX_SPI4_Init();
   MX_TIM7_Init();
   /* USER CODE BEGIN 2 */
-  sdo.ram.crc_cal = Calc_CRC(FLASH_APP_SECTOR, FLASH_APP_SIZE_KB*1000/4);
-  sdo.ram.crc_app = *(uint32_t*)FLASH_APP_SECTOR;
+  sdo.ram.crc_cal = Calc_CRC(FLASH_APP_ADDR, (FLASH_APP_BSIZE/4)-1);
+  sdo.ram.crc_app = *(uint32_t*)(FLASH_APP_ADDR+FLASH_APP_BSIZE-4);
   print_sdo(&sdo.ram);
   /* Init soes */
   ecat_slv_init(&config);

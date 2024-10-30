@@ -33,7 +33,7 @@ uint8_t		foe_buffer[0x400];
 foe_file_cfg_t      gFOE_firmware_files[] = {
 	{
 		.name =					"soes_stm32.bin",
-		.max_data = 			FLASH_APP_SIZE_KB*1000, 	// sector size ?!?
+		.max_data = 			FLASH_APP_BSIZE, 	// sector size ?!?
 		.dest_start_address =	FLASH_APP_ADDR, 	//
 		.address_offset =		0,
 		.filepass =				0xB032,
@@ -45,7 +45,7 @@ foe_file_cfg_t      gFOE_firmware_files[] = {
 	},
 	{
 		.name =					"params.bin",
-		.max_data = 			FLASH_PARAM_SIZE_KB*1000, 	// sector size ?!?
+		.max_data = 			FLASH_PARAM_BSIZE, 	// sector size ?!?
 		.dest_start_address =	FLASH_PARAM_ADDR, 	//
 		.address_offset =		0,
 		.filepass =				0xA4A4,
@@ -56,7 +56,7 @@ foe_file_cfg_t      gFOE_firmware_files[] = {
 	},
 	{
 		.name =					"calib.bin",
-		.max_data = 			FLASH_CALIB_SIZE_KB*1000, 	// sector size ?!?
+		.max_data = 			FLASH_CALIB_BSIZE, 	// sector size ?!?
 		.dest_start_address =	FLASH_CALIB_ADDR, 	//
 		.address_offset =		0,
 		.filepass =				0xCA71,

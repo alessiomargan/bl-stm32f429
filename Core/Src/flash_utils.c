@@ -50,15 +50,15 @@ int Erase_Flash_StartAddr(uint32_t flash_addr) {
 	switch (flash_addr) {
 	case FLASH_PARAM_ADDR:
 		eraseInfo.Sector = FLASH_PARAM_SECTOR;
-		eraseInfo.NbSectors = 1;			// number of sectors to be erased.
+		eraseInfo.NbSectors = FLASH_PARAM_NSECTORS;			// number of sectors to be erased.
 		break;
 	case FLASH_CALIB_ADDR:
 		eraseInfo.Sector = FLASH_CALIB_SECTOR;
-		eraseInfo.NbSectors = 1;			// number of sectors to be erased.
+		eraseInfo.NbSectors = FLASH_CALIB_NSECTORS;			// number of sectors to be erased.
 		break;
 	case FLASH_APP_ADDR:
 		eraseInfo.Sector = FLASH_APP_SECTOR;
-		eraseInfo.NbSectors = 3;			// number of sectors to be erased.
+		eraseInfo.NbSectors = FLASH_APP_NSECTORS;			// number of sectors to be erased.
 		break;
 	default:
 		break;

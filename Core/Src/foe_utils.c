@@ -31,9 +31,13 @@ uint32_t on_foe_open_cb(uint8_t op) {
 
 uint32_t on_foe_close_cb( void ) {
 	// 0 OK ==> HAL_OK
-	sdo.ram.crc_app = Calc_CRC(FLASH_APP_SECTOR, FLASH_APP_SIZE_KB*1000/4);
-	DPRINT("%s crc_app 0x%04X\n", __FUNCTION__, sdo.ram.crc_app);
-	return HAL_OK;
+	uint32_t crc_app = 0xDEADBEEF;
+	uint32_t crc_addr = FLASH_APP_ADDR+FLASH_APP_BSIZE-4;
+	crc_app = Calc_CRC(FLASH_APP_ADDR, (FLASH_APP_BSIZE/4)-1);
+	uint32_t ret = Write_Flash_W(crc_addr, (void*)&crc_app, sizeof(crc_app));
+	sdo.ram.crc_app = *(uint32_t*)(FLASH_APP_ADDR+FLASH_APP_BSIZE-4);
+	DPRINT("%s crc_addr 0x%04X crc_app 0x%04X\n", __FUNCTION__, crc_addr, sdo.ram.crc_app);
+	return ret;
 }
 
 uint32_t foe_write_cal_mat( foe_file_cfg_t * writefile_cfg, uint8_t * data, size_t length ) {
