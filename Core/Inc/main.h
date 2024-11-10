@@ -41,8 +41,10 @@ extern "C" {
 
 /* Exported constants --------------------------------------------------------*/
 /* USER CODE BEGIN EC */
+extern CRC_HandleTypeDef hcrc;
 extern SPI_HandleTypeDef hspi4;
-
+extern TIM_HandleTypeDef htim7;
+extern UART_HandleTypeDef huart1;
 /* USER CODE END EC */
 
 /* Exported macro ------------------------------------------------------------*/

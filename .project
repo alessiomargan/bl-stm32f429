@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <projectDescription>
-	<name>bl_stm32f4xx</name>
+	<name>bl_stm32f429</name>
 	<comment></comment>
 	<projects>
 	</projects>
@@ -34,6 +34,11 @@
 			<name>soes</name>
 			<type>2</type>
 			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>stm32f4xx-bldr</name>
+			<type>2</type>
+			<locationURI>GIT_STM32F4xx_BLDR</locationURI>
 		</link>
 		<link>
 			<name>soes/ecat_slv.c</name>
@@ -85,6 +90,10 @@
 		<variable>
 			<name>GIT_SOES</name>
 			<value>file:/home/amargan/work/code/firmware/SOES</value>
+		</variable>
+		<variable>
+			<name>GIT_STM32F4xx_BLDR</name>
+			<value>file:/home/amargan/work/code/firmware/stm32f4xx-bldr</value>
 		</variable>
 		<variable>
 			<name>GIT_UC_TEST</name>
