@@ -49,14 +49,6 @@ extern UART_HandleTypeDef huart1;
 
 /* Exported macro ------------------------------------------------------------*/
 /* USER CODE BEGIN EM */
-#define DBG_1_ON	HAL_GPIO_WritePin(DBG_1_GPIO_Port, DBG_1_Pin, GPIO_PIN_SET)
-#define DBG_1_OFF	HAL_GPIO_WritePin(DBG_1_GPIO_Port, DBG_1_Pin, GPIO_PIN_RESET)
-#define DBG_2_ON	HAL_GPIO_WritePin(DBG_2_GPIO_Port, DBG_2_Pin, GPIO_PIN_SET)
-#define DBG_2_OFF	HAL_GPIO_WritePin(DBG_2_GPIO_Port, DBG_2_Pin, GPIO_PIN_RESET)
-#define TOGLLE_RED	HAL_GPIO_TogglePin(LD4_GPIO_Port, LD4_Pin)
-#define TOGLLE_GRN	HAL_GPIO_TogglePin(LD3_GPIO_Port, LD3_Pin)
-#define GRN_ON 		HAL_GPIO_WritePin(LD3_GPIO_Port, LD3_Pin, GPIO_PIN_SET)
-#define GRN_OFF 	HAL_GPIO_WritePin(LD3_GPIO_Port, LD3_Pin, GPIO_PIN_RESET)
 
 /* USER CODE END EM */
 
@@ -69,6 +61,7 @@ void Error_Handler(void);
 
 /* Private defines -----------------------------------------------------------*/
 #define ecat_spi hspi4
+#define printf_uart huart1
 #define ECAT_SPI_CLK_Pin GPIO_PIN_2
 #define ECAT_SPI_CLK_GPIO_Port GPIOE
 #define ECAT_IRQ_Pin GPIO_PIN_3
@@ -88,19 +81,19 @@ void Error_Handler(void);
 #define PH0_OSC_IN_GPIO_Port GPIOH
 #define PH1_OSC_OUT_Pin GPIO_PIN_1
 #define PH1_OSC_OUT_GPIO_Port GPIOH
-#define B1_Pin GPIO_PIN_0
-#define B1_GPIO_Port GPIOA
-#define B1_EXTI_IRQn EXTI0_IRQn
+#define BTN_1_Pin GPIO_PIN_0
+#define BTN_1_GPIO_Port GPIOA
+#define BTN_1_EXTI_IRQn EXTI0_IRQn
 #define STLINK_RX_Pin GPIO_PIN_9
 #define STLINK_RX_GPIO_Port GPIOA
 #define STLINK_TX_Pin GPIO_PIN_10
 #define STLINK_TX_GPIO_Port GPIOA
 #define SWDIO_Pin GPIO_PIN_13
 #define SWDIO_GPIO_Port GPIOA
-#define LD3_Pin GPIO_PIN_13
-#define LD3_GPIO_Port GPIOG
-#define LD4_Pin GPIO_PIN_14
-#define LD4_GPIO_Port GPIOG
+#define LED_1_Pin GPIO_PIN_13
+#define LED_1_GPIO_Port GPIOG
+#define LED_2_Pin GPIO_PIN_14
+#define LED_2_GPIO_Port GPIOG
 #define DBG_1_Pin GPIO_PIN_3
 #define DBG_1_GPIO_Port GPIOB
 #define DBG_2_Pin GPIO_PIN_4

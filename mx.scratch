@@ -3,16 +3,16 @@
   <FileVersion>3.0</FileVersion>
   <Workspace>
     <WorkspaceType>Single-project</WorkspaceType>
-    <WorkspacePath>/home/amargan/STM32CubeIDE/workspace_1.16.0/bl_stm32f4xx/</WorkspacePath>
+    <WorkspacePath>/home/amargan/work/code/firmware/bl-stm32f429/</WorkspacePath>
     <underRoot>true</underRoot>
     <TrustZone>0</TrustZone>
     <HAL_Driver>/home/amargan/STM32Cube/Repository//STM32Cube_FW_F4_V1.28.1</HAL_Driver>
     <CMSIS>Drivers/CMSIS</CMSIS>
     <Toolchain>STM32CubeIDE</Toolchain>
-    <IocFile>bl_stm32f4xx.ioc</IocFile>
+    <IocFile>bl-stm32f429.ioc</IocFile>
     <Project>
               
-      <ProjectName>bl_stm32f4xx</ProjectName>
+      <ProjectName>bl-stm32f429</ProjectName>
            
       <ProjectNature>C</ProjectNature>
        
@@ -27,7 +27,7 @@
       <configs>
         <config>
               
-          <name>bl_stm32f4xx</name>
+          <name>bl-stm32f429</name>
           	 
           <mainSourceRepo>Core</mainSourceRepo>
              
@@ -64,7 +64,7 @@
                   
           <board>STM32F429I-DISC1</board>
               
-          <debugprobe/>
+          <debugprobe>swd</debugprobe>
               
           <optimization/>
               
