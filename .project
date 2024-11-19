@@ -31,6 +31,11 @@
 	</natures>
 	<linkedResources>
 		<link>
+			<name>STM32F429ZITX_FLASH.ld</name>
+			<type>1</type>
+			<locationURI>GIT_STM32F4xx_BLDR/stm32f429/STM32F429ZITX_FLASH.ld</locationURI>
+		</link>
+		<link>
 			<name>soes</name>
 			<type>2</type>
 			<locationURI>virtual:/virtual</locationURI>
