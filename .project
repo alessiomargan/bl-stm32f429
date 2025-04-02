@@ -36,14 +36,14 @@
 			<locationURI>GIT_STM32F4xx_BLDR/stm32f429/STM32F429ZITX_FLASH.ld</locationURI>
 		</link>
 		<link>
+			<name>bl-stm32f4xx-ecat</name>
+			<type>2</type>
+			<locationURI>PARENT-1-GIT_STM32F4xx_BLDR/bl-stm32f4xx-ecat</locationURI>
+		</link>
+		<link>
 			<name>soes</name>
 			<type>2</type>
 			<locationURI>virtual:/virtual</locationURI>
-		</link>
-		<link>
-			<name>stm32f4xx-bldr</name>
-			<type>2</type>
-			<locationURI>GIT_STM32F4xx_BLDR</locationURI>
 		</link>
 		<link>
 			<name>soes/ecat_slv.c</name>
@@ -98,7 +98,7 @@
 		</variable>
 		<variable>
 			<name>GIT_STM32F4xx_BLDR</name>
-			<value>file:/home/amargan/work/code/firmware/stm32f4xx-bldr</value>
+			<value>file:/home/amargan/work/code/firmware/bl-stm32f4xx-ecat</value>
 		</variable>
 		<variable>
 			<name>GIT_UC_TEST</name>
