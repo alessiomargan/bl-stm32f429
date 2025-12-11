@@ -6,7 +6,7 @@
     <WorkspacePath>/home/amargan/work/code/firmware/bl-stm32f429/</WorkspacePath>
     <underRoot>true</underRoot>
     <TrustZone>0</TrustZone>
-    <HAL_Driver>/home/amargan/STM32Cube/Repository//STM32Cube_FW_F4_V1.28.1</HAL_Driver>
+    <HAL_Driver>/home/amargan/STM32Cube/Repository//STM32Cube_FW_F4_V1.28.3</HAL_Driver>
     <CMSIS>Drivers/CMSIS</CMSIS>
     <Toolchain>STM32CubeIDE</Toolchain>
     <IocFile>bl-stm32f429.ioc</IocFile>
@@ -49,7 +49,7 @@
                 
           </memories>
               
-          <startup>/home/amargan/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.1/Drivers/CMSIS/Device\ST\STM32F4xx\Source\Templates\gcc\startup_stm32f429xx.s</startup>
+          <startup>/home/amargan/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.3/Drivers/CMSIS/Device\ST\STM32F4xx\Source\Templates\gcc\startup_stm32f429xx.s</startup>
                 
           <LinkSettings>
             	
@@ -68,11 +68,7 @@
               
           <optimization/>
               
-          <Aincludes>
-                    
-            <include/>
-                    
-          </Aincludes>
+          <Aincludes>        </Aincludes>
               
           <Adefines>        </Adefines>
                 
@@ -147,7 +143,7 @@
           <name>Drivers</name>
                   
         </sourceEntry>
-                	          
+        	          
       </sourceEntries>
       <Groups>    </Groups>
        
