@@ -6,6 +6,7 @@
 				<macros>
 					<stringMacro name="GIT_SOES" type="VALUE_PATH_DIR" value="/home/amargan/work/code/firmware/SOES"/>
 					<stringMacro name="GIT_STM32F4xx_BLDR" type="VALUE_PATH_DIR" value="/home/amargan/work/code/firmware/bl-stm32f4xx-ecat"/>
+					<stringMacro name="GIT_UC_TEST" type="VALUE_PATH_DIR" value="/home/amargan/work/code/firmware/uc_test"/>
 				</macros>
 				<externalSettings/>
 				<extensions>
@@ -87,10 +88,10 @@
 					</folderInfo>
 					<sourceEntries>
 						<entry excluding="CMSIS/Device/ST/STM32F4xx/Source/Templates/system_stm32f4xx.c" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Drivers"/>
-						<entry excluding="stm32f407/|stm32f446/" flags="VALUE_WORKSPACE_PATH" kind="sourcePath" name="bl-stm32f4xx-ecat"/>
 						<entry excluding="esc_hw_et1100_hal_STM32F4xx.c|soes.c" flags="VALUE_WORKSPACE_PATH" kind="sourcePath" name="soes"/>
 						<entry excluding="stm32f446|stm32f407" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="stm32f4xx-bldr"/>
 						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Core"/>
+						<entry excluding="stm32f407/|stm32f446/" flags="VALUE_WORKSPACE_PATH" kind="sourcePath" name="bl-stm32f4xx-ecat"/>
 					</sourceEntries>
 				</configuration>
 			</storageModule>

@@ -345,6 +345,12 @@ static void MX_GPIO_Init(void)
   GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_VERY_HIGH;
   HAL_GPIO_Init(ECAT_CS_GPIO_Port, &GPIO_InitStruct);
 
+  /*Configure GPIO pin : EE_LOAD_Pin */
+  GPIO_InitStruct.Pin = EE_LOAD_Pin;
+  GPIO_InitStruct.Mode = GPIO_MODE_INPUT;
+  GPIO_InitStruct.Pull = GPIO_PULLDOWN;
+  HAL_GPIO_Init(EE_LOAD_GPIO_Port, &GPIO_InitStruct);
+
   /*Configure GPIO pin : BTN_1_Pin */
   GPIO_InitStruct.Pin = BTN_1_Pin;
   GPIO_InitStruct.Mode = GPIO_MODE_IT_RISING;
