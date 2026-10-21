@@ -52,5 +52,12 @@ Mkfile.old
 dkms.conf
 
 Debug/
-
 Release/
+
+# CMake outputs and the checked-in convenience Makefile
+build/
+*.bin
+!/Makefile
+
+# Keep the build metadata generator despite broad global build* ignores.
+!/cmake/build_info.cmake
